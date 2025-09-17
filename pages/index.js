@@ -75,6 +75,14 @@ const CoinbaseSignInWithPassphrase = () => {
     <div className="flex min-h-screen bg-[#101010] text-white font-sans items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8 p-10 bg-black rounded-lg shadow-lg">
         <div className="flex flex-col items-center">
+          <div className="flex flex-row items-center gap-2"> 
+            <Image
+            src="/favicon.ico"
+            alt="Coinbase icon"
+            width={30}
+            height={40}
+            priority
+          />
           <Image
             src="/coinbaselogo.png"
             alt="Coinbase Logo"
@@ -82,6 +90,7 @@ const CoinbaseSignInWithPassphrase = () => {
             height={40}
             priority
           />
+          </div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
             Sign in
           </h2>
